@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="A comparison of top graphic design software including Adobe Photoshop, Illustrator, and more.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Graphic Genius</title>
+            <style>
+                /* Styling for navigation links */
+                .header_links {
+                    list-style-type: none;  
+                    margin: 0 auto;
+                    padding: 0; 
+                    text-align: center;
+                }
+                /* Inline list items for the header */
+                .header_item {
+                    display: inline;
+                    margin-right: 20px;
+                }
+                /* Styling for the preview and logo image */
+                #preview_logo {
+                    width: 1683px;
+                    height: 1200px;
+                    position:relative;
+                    top: -76px;
+                    left: -83px;
+                    display: block;
+                    margin: 75px;
+                }
+                /* Styling for homepage description */
+                #homepage {
+                    font-size: 18px;
+                    color:#FFFFFF;
+                    width: 789px;
+                    height: 160px;
+                    text-align: left;
+                    margin: 0 auto;
+                }
+                /* Center-align headers and apply consistent fonts */
+                .section_header {
+                    text-align: center;
+                    font-family: Helvetica;
+                    color: rgb(255, 218, 185);
+                }
+                .container {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin: 0 auto;
+                }
+                .container_reverse {
+                    display: flex;
+                    flex-direction: row-reverse;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin: 0 auto;
+                }
+                .item {
+                    flex: 1;
+                    margin: 70px;
+                }
+                .item_reverse {
+                    flex: 1;
+                    margin: 70px;
+                    padding: 0px 0px 0px 390px;
+                }
+                /* Unified styling for software descriptions */
+                #software_description {
+                    font-family: verdana;
+                    color:#FFFFFF;
+                    font-size: larger;
+                }
+                /* Unified styling for software descriptions */
+                #software_description_reg {
+                    font-family: Verdana, sans-serif;
+                    font-size: 20px;
+                    text-align: right;
+                    color:#FFFFFF;
+                    width: 370px;
+                    height: 280px;
+                    padding: 0px 0px 0px 390px;
+                    margin-top: 60px;
+                }
+                #software_description_reverse {
+                    font-family: Verdana, sans-serif;
+                    font-size: 20px;
+                    text-align: left;
+                    color:#FFFFFF;
+                    width: 370px;
+                    height: 280px;
+                    padding: 0px 390px 0px 0px;
+                    margin-top: 60px;
+                }
+                /* Color titles for software */
+                .title_fresco {
+                    color: #30A8FF;
+                    font-size: 22px;
+                }
+                .title_illustrator {
+                    color: #FFB948;
+                    font-size: 22px;
+                }
+                .title_indesing {
+                    color: #FF3366;
+                    font-size: 22px;
+                }
+                .title_photoshop {
+                    color: #A0D3FA;
+                    font-size: 22px;
+                }
+                .title_premiere {
+                    color: #E276FF;
+                    font-size: 22px;
+                }
+                .title_xd {
+                    color: #FF61F6;
+                    font-size: 22px;
+                }
+                .title_affinity {
+                    color: #53D0FC;
+                    font-size: 22px;
+                }
+                .title_procreate {
+                    color: #61EC7B;
+                    font-size: 22px;
+                }
+                /* Styling for the software images */
+                .image {
+                    width: 300px;
+                    height: 305px;
+                    margin: 0 auto;
+                    border: 3px solid black;
+                }
+                /* Overview section styling */
+                #overview {
+                    font-family: verdana;
+                    font-size: 18px;
+                    color:#FFFFFF;
+                    width: 789px;
+                    height: 160px;
+                    padding: 0px 0px 0px 0px;
+                    text-align: left;
+                    margin: 0 auto;
+                }
+                /* Styling for links */
+                #links {
+                    font-family: verdana;
+                    font-size: 18px;
+                    color:#FFFFFF;
+                    width: 505px;
+                    height: 255px;
+                    margin: 0 auto;
+                }
+                /* Contact links styling */
+                #contact_links {
+                    font-family: verdana;
+                    font-size: 18px;
+                    color:#FFFFFF;
+                    text-align: center;
+                }
+                /* About section styling */
+                #about {
+                    font-family: verdana;
+                    font-size: 20px;
+                    color:#FFFFFF;
+                    width: 360px;
+                    height: 310px;
+                    padding : 0px 360px 0px 0px;
+                    margin-top: 60px;
+                    text-align: left;
+                }
+                /* Help section styling */
+                #help {
+                    font-family: verdana;
+                    font-size: 19px;
+                    color:#FFFFFF;
+                    text-align: center;
+                }
+                /* Background styling for the entire page */
+                body {
+                    background-image: url("images/Background.jpg");
+                    background-size: cover;
+                    background-attachment: fixed;
+                    background-color: #000000;
+                    font-family: Verdana, sans-serif;
+                    color: white;
+                }
+                /* Removes default list styling */
+                ul {
+                    list-style-type: none;  
+                    text-align: center;
+                }
+                /* Styling for all anchor tags (links) */
+                a {
+                    text-decoration: none; 
+                    color: #FFFFFF; 
+                    font-weight: bold;
+                }
+                 /* Hover effect for links */
+                a:hover {
+                    text-decoration: underline;
+                    color: #ffd900;
+                    filter: brightness(1.2);
+                }
+                a:active {
+                    color: #9900ff;
+                }
+                #form {
+                    padding-left: 775px;
+                    margin: 10px;
+                }
+                input[type=text] {
+                    width: 25%;
+                    padding: 12px 20px;
+                    margin: 10px;
+                    box-sizing: border-box;
+                    border: 2px solid #ccc;
+                    border-radius: 4px;
+                    background-color: #0BCBE3;
+                    color: white;
+                }
+                input[type=textarea] {
+                    width: 100%;
+                    height: 150px;
+                    padding: 12px 20px;
+                    box-sizing: border-box;
+                    border: 2px solid #ccc;
+                    border-radius: 4px;
+                    background-color: #f8f8f8;
+                }
+                label {
+                    font-family: Verdana, sans-serif;
+                    color: rgb(255, 255, 255);
+                    font-size: large;
+                    text-align: center;
+                }
+            </style>
+    </head>
+
+    <body>
+        <!-- Header Section with nav links -->
+        <header>
+            <nav>
+                <ul class="header_links">
+                    <li class="header_item"> <a href="#homepage">Home</a></li>
+                    <li class="header_item"> <a href="#software_description1">Software</a></li>
+                    <li class="header_item"> <a href="#overview">Overview</a></li>
+                    <li class="header_item"> <a href="#links">Links</a></li>
+                    <li class="header_item"> <a href="#contact_links">Contact</a></li>
+                    <li class="header_item"> <a href="#about">About Us</a></li>
+                    <li class="header_item"> <a href="#help">Help</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Logo and Preview Section -->
+        <section>
+            <div>
+                <div>
+                    <img id="preview_logo" src="images/Preview+Logo.jpg" alt="Preview and Logo">
+                </div>
+            </div>
+        </section>
+        <!-- Home Section -->
+        <section>
+            <main>
+                <h2 class="section_header">Home</h2>
+                    <p id="homepage"> The homepage presents the main idea of the website: a platform
+                        designed to help users choose the best graphic design software. <br>It includes a
+                        list of the most popular programs, their features, capabilities, purposes, as
+                        well as their pros and cons. <br>The main goal is to provide a convenient review and
+                        comparison for users engaged in graphic design or those seeking new tools for
+                        their work.
+                    </p>
+            </main>
+        </section>
+        <!-- Software Section -->
+        <section>
+            <main>
+                <h2 class="section_header">Software</h2>
+                <h3 class="section_header">The software overview includes the following tools:</h3>
+
+                    <div class="container">
+                        <div class="item">
+                            <figure>
+                                <ul id="software_description_reg">
+                                    <span class="title_fresco">Adobe Fresco</span>
+                                    <li> Capabilities: digital drawing, working with both vector and raster brushes.</li>
+                                    <li> Purpose: drawing and illustration.</li>
+                                    <li> Features: touchscreen support, integration with other Adobe products.</li>
+                                    <li> Pros: intuitive interface, powerful drawing tools.</li>
+                                    <li> Cons: limited feature set compared to other Adobe programs.</li>
+                                </ul>
+                            </figure>
+                        </div>
+                        <div class="item">
+                            <figcaption>
+                                <img class="image" src="images/Adobe Fresco.jpg" loading="lazy" alt="Adobe Fresco">
+                            </figcaption>
+                        </div>
+                    </div>
+
+                    <div class="container_reverse">
+                        <div class="item">
+                            <figure>
+                                <ul id="software_description_reverse">
+                                    <span class="title_illustrator">Adobe Illustrator</span>
+                                    <li> Capabilities: working with vector graphics.</li>
+                                    <li> Purpose: creating logos, illustrations, and print materials.</li>
+                                    <li> Features: vector tools, support for scaling without quality loss.</li>
+                                    <li> Pros: high precision, support for professional formats.</li>
+                                    <li> Cons: expensive.</li>
+                                </ul>
+                            </figure>
+                        </div>
+                        <div class="item_reverse">
+                            <figcaption>
+                                <img class="image" src="images/Adobe Illustrator.jpg" loading="lazy" alt="Adobe Illustrator">
+                            </figcaption>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="item">
+                            <figure>
+                                <ul id="software_description_reg">
+                                    <span class="title_indesing">Adobe InDesign</span>
+                                    <li> Capabilities: layout and publishing of print and digital content.</li>
+                                    <li> Purpose: creating magazines, newspapers, brochures.</li>
+                                    <li> Features: text layout tools, integration with other Adobe products.</li>
+                                    <li> Pros: powerful layout tools.</li>
+                                    <li> Cons: complex for beginners.</li>
+                                </ul>  
+                            <figure>
+                        </div>
+                        <div class="item">
+                            <figcaption>
+                                <img class="image" src="images/Adobe InDesign.jpg" loading="lazy" alt="Adobe InDesign">
+                            </figcaption>
+                        </div>
+                    </div>
+
+                    <div class="container_reverse">
+                        <div class="item">
+                            <figure>
+                                <ul id="software_description_reverse">
+                                    <span class="title_photoshop">Adobe Photoshop</span>
+                                    <li> Capabilities: raster graphics, image editing.</li>
+                                    <li> Purpose: photo editing, creating digital art.</li>
+                                    <li> Features: retouching tools, filters, layers.</li>
+                                    <li> Pros: flexibility and versatility.</li>
+                                    <li> Cons: high cost and learning curve.</li>
+                                </ul>
+                            </figure>
+                        </div>
+                        <div class="item_reverse">
+                            <figcaption>
+                                <img class="image" src="images/Adobe Photoshop.jpg" loading="lazy" alt="Adobe Photoshop">
+                            </figcaption>
+                        </div>
+                    </div>
+                    
+                    <div class="container">
+                        <div class="item">
+                            <figure>
+                                <ul id="software_description_reg">
+                                    <span class="title_premiere">Adobe Premiere</span>
+                                    <li> Capabilities: video editing.</li>
+                                    <li> Purpose: video production, film editing.</li>
+                                    <li> Features: editing tools, effects, color correction.</li>
+                                    <li> Pros: professional-grade video editing tools.</li>
+                                    <li> Cons: resource-intensive.</li>
+                                </ul>
+                            </figure>
+                        </div>
+                        <div class="item">
+                            <figcaption>
+                                <img class="image" src="images/Adobe Premiere.jpg" loading="lazy" alt="Adobe Premiere">
+                            </figcaption>
+                        </div>
+                    </div>
+
+                    <div class="container_reverse">
+                        <div class="item">
+                            <figure>
+                                <ul id="software_description_reverse">
+                                    <span class="title_xd">Adobe XD</span>
+                                    <li> Capabilities: interface prototyping.</li>
+                                    <li> Purpose: UI/UX design.</li>
+                                    <li> Features: tools for creating interactive prototypes.</li>
+                                    <li> Pros: fast workflow, integration with other Adobe products.</li>
+                                    <li> Cons: limited capabilities for more complex projects.</li>
+                                </ul>
+                            </figure>
+                        </div>
+                        <div class="item_reverse">
+                            <figcaption>
+                                <img class="image" src="images/Adobe XD.jpg" loading="lazy" alt="Adobe XD">
+                            </figcaption>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="item">
+                            <figure>
+                                <ul id="software_description_reg">
+                                    <span class="title_affinity">Affinity Designer</span>
+                                    <li> Capabilities: vector graphics.</li>
+                                    <li> Purpose: an alternative to Adobe Illustrator.</li>
+                                    <li> Features: vector editing, style support.</li>
+                                    <li> Pros: affordable, no subscription.</li>
+                                    <li> Cons: less popular among professionals.</li>
+                                </ul>
+                            </figure>
+                        </div>
+                        <div class="item">
+                            <figcaption>
+                                <img class="image" src="images/Affinity Designer.jpg" loading="lazy" alt="Affinity Designer">
+                            </figcaption>
+                        </div>
+                    </div>
+
+                    <div class="container_reverse">
+                        <div class="item">
+                            <figure>
+                                <ul id="software_description_reverse">
+                                    <span class="title_procreate">Procreate</span>
+                                    <li> Capabilities: digital drawing, illustration.</li>
+                                    <li> Purpose: illustration on iPad.</li>
+                                    <li> Features: intuitive interface, powerful drawing tools.</li>
+                                    <li> Pros: easy to use, powerful for artists.</li>
+                                    <li> Cons: available only on iPad.</li>
+                                </ul>
+                            </figure>
+                        </div>
+                        <div class="item_reverse">
+                            <figcaption>
+                                <img class="image" src="images/Procreate.jpg" loading="lazy" alt="Procreate">
+                            </figcaption>
+                        </div>
+                    </div>
+            </main>
+        </section>
+        <!-- Overview Section -->
+        <section>
+            <main>
+                <h2 class="section_header">Overview</h2>
+                    <p id="overview"> 
+                        All the listed programs have unique strengths and purposes.
+                        Adobe Photoshop is the leader in image editing, while Illustrator is
+                        ideal for vector graphics.
+                        Programs like Adobe XD and InDesign are tailored for
+                        interface design and layout, respectively.
+                        Affinity Designer and Procreate
+                        offer more affordable alternatives for beginner designers or those who prefer
+                        not to work with subscriptions. 
+                        Overall, the choice of software depends on the
+                        user's specific needs.
+                    </p>
+            </main>
+        </section>
+        <!-- Links Section -->
+        <section>
+            <main>
+            <h2 class="section_header">Links</h2>
+                    <ul id="links"> 
+                        <li>Adobe Fresco: Digital painting and drawing app | 
+                        <a href="https://www.adobe.com/uk/products/fresco.html?msockid=30ca22ca148b61c51ea936a9158d607e" target="_blank" alt="Adobe Fresco">
+                                Adobe Fresco
+                            </a></li>
+                        <br>
+                        <li>Adobe Illustrator: Industry-leading vector graphics software | 
+                        <a href="https://www.adobe.com/uk/products/illustrator/campaign/pricing.html?mv=search&mv=search&mv2=paidsearch&sdid=GMCWY69B&ef_
+                        id=5190ca3c01831027ededad3422aee3aa:G:s&s_kwcid=AL!3085!10!79371181576258!79371161872161&msclkid=5190ca3c01831027ededad3422aee3aa" target="_blank" alt="Adobe Illustrator">
+                                Adobe Illustrator
+                            </a></li>
+                        <br>
+                        <li>Adobe InDesign: Layout design and desktop publishing software | 
+                        <a href="https://www.adobe.com/uk/products/indesign/campaign/pricing.html?mv=search&mv=search&mv2=paidsearch&sdid=HVQ7WXXZ&ef_
+                        id=bcfb0a352338166e38e66d3d007dff58:G:s&s_kwcid=AL!3085!10!79233741153326!79233723404434&msclkid=bcfb0a352338166e38e66d3d007dff58" target="_blank" alt="Adobe InDesign">
+                                Adobe InDesign
+                            </a></li>
+                        <br>
+                        <li>Adobe Photoshop: Transform photos and make gorgeous graphics | 
+                        <a href="https://www.adobe.com/uk/products/photoshop/landpa.html?mv=search&mv=search&mv2=paidsearch&sdid=2XBSBWBF&ef_
+                        id=e0a0def0ac1e100a42bfb9f88f449368:G:s&s_kwcid=AL!3085!10!79371087384580!79371160303221&msclkid=e0a0def0ac1e100a42bfb9f88f449368" target="_blank" alt="Adobe Photoshop">
+                                Adobe Photoshop
+                            </a></li>
+                    </ul>
+
+                    <ul id="links">
+                        <li>Adobe Premiere Pro: Edit anything you imagine in video | 
+                        <a href="https://www.adobe.com/uk/products/premiere/campaign/pricing.html?mv=search&mv=search&mv2=paidsearch&sdid=G4FRYP7G&ef_
+                        id=a114eee2f5571aca1eba89ead63aa213:G:s&s_kwcid=AL!3085!10!79714683970296!79714757741183&msclkid=a114eee2f5571aca1eba89ead63aa213" target="_blank" alt="Adobe Premiere Pro">
+                                Adobe Premiere Pro
+                            </a></li>
+                        <br>
+                        <li>Adobe XD: 2D animation software, Flash animation | 
+                        <a href="https://www.adobe.com/uk/products/animate.html?mv=search&mv=search&mv2=paidsearch&sdid=8WLD4X2V&ef_
+                        id=19ec1789da51143096727081f92fa338:G:s&s_kwcid=AL!3085!10!79233687183657!79234145599989&msclkid=19ec1789da51143096727081f92fa338&utm_source=bing&utm_medium=
+                        cpc&utm_campaign=UK%7CCPRO%7CVideo%7CAWAR%7CAnimation_PHRASE%7CBNG%7CAN%7C%7C&utm_term=animation%20software&utm_content=uk%3Cvideo%3Cawar%3Cge%3Canimation%
+                        20software%3Cphrase" target="_blank" alt="Adobe XD">
+                                Adobe XD
+                            </a></li>
+                        <br>
+                        <li>Affinity Designer: <a href="https://affinity.serif.com/en-gb/designer/" target="_blank" alt="Affinity Designer">
+                                Graphic Design & Illustration Software
+                            </a></li>
+                        <br>
+                        <li>Procreate: <a href="https://procreate.com/" target="_blank" alt="Procreate">
+                                Procreate - Made for Artists
+                            </a></li>
+                    </ul>
+                </main>
+        </section>
+        <!-- Contact Section -->
+        <section>
+            <h2 class="section_header">Contact</h2>
+                <p id="contact_links"> 
+                    Instagram:<a href="https://www.instagram.com/" target="_blank" alt="Instagram">
+                        @graphic_genius_uk
+                    </a>
+                    <br>
+                    YouTube:<a href="https://www.youtube.com/" target="_blank" alt="YouTube">
+                        Graphic Genius Channel
+                    </a>
+                    <br>
+                    Twitter:<a href="https://x.com/?lang=en-gb" target="_blank" alt="Twitter">
+                        @GGenius_Tech
+                    </a>
+                    <br>
+                    GitHub:<a href="https://github.com/github" target="_blank" alt="GitHub">
+                        github.com/GraphicGenius
+                    </a>
+                    <br>
+                        Phone: +44 1234 56789
+                </p>
+        </section>
+        <!-- About Section -->
+        <section>
+            <main>
+                <h2 class="section_header">About Us</h2>
+                    <div class="container">
+                        <div class="item_reverse">
+                            <img class="image" src="images/photo_2024-11-14_21-15-31.jpg" loading="lazy" alt="My Photo">
+                        </div>
+                        <div> 
+                            <p id="about"> 
+                                I am a student at Birmingham City University (BCU) working on my first
+                                project — a one-page website for the Web Application Design module. The process
+                                has been exciting and engaging, and I aimed to make this site useful for future
+                                users. I hope you enjoy the result! Wishing you all the best while using this site.
+                                <br>
+                                Best regards, Illia Stoiko.
+                            </p>
+                        </div>
+                    </div>
+            </main>
+        </section>
+        <!-- Help section -->
+        <section>
+            <main>
+            <h2 class="section_header">Help</h2>
+                <p id="help">If you have any questions and would like to contact us here is a option for you as a form, fell free to get in touch with us!
+                    </p>
+                <div id="form">
+                    <form>
+                        <label for="fname">First name:</label>
+                        <input type="text" id="fname" name="fname" aria-label="First name"><br>
+                        <label for="lname">Last name:</label>
+                        <input type="text" id="lname" name="lname" aria-label="Last name"><br>
+                        <label for="lname">Email:</label>
+                        <input type="text" id="email" name="email" aria-label="Email"><br>
+                        <label for="lname">Message:</label>
+                        <input type="textarea" id="message" name="message" aria-label="Message"><br>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </main>
+        </section>
+    </body>
+</html>
